@@ -4,9 +4,10 @@ version: '3'
 services:
   db:
     image: postgres
-    restart: unless-stopped
+    restart: always
     volumes:
         - ..:/workspace:cached
+        - ./init_db:/docker-entrypoint-initdb.d
     ports: 
       - 5432:5432
     environment:

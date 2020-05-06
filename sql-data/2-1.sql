@@ -1,3 +1,3 @@
-SELECT shohin_mei, torokubi
+SELECT shohin_mei, tourokubi
 FROM Shohin
-WHERE torokubi >= '2009-04-28';
+WHERE tourokubi >= '2009-04-28';
